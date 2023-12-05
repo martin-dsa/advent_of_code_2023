@@ -31,8 +31,8 @@ fn solve(input: &str, r: Regex) -> u32 {
                 .map(|c| c.unwrap().get(1).unwrap().as_str())
                 .collect::<Vec<_>>();
 
-            let d1 = parse(*captures.first().unwrap());
-            let d2 = parse(*captures.last().unwrap());
+            let d1 = parse(captures.first().unwrap());
+            let d2 = parse(captures.last().unwrap());
 
             d1 * 10 + d2
         })
