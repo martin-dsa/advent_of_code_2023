@@ -1,7 +1,8 @@
 name: Update readme ⭐️ progress
 
-on:
-    - cron: "19 */6 * * *"
+on: 
+    schedule:
+        - cron: "19 */6 * * *"
     workflow_dispatch:
 
 jobs:
