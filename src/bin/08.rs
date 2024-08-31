@@ -100,7 +100,7 @@ pub fn part_one(input: &str) -> Option<u64> {
         .collect::<HashMap<_, _>>();
 
     let start_node: (&String, &(String, String)) =
-        (&START.to_string(), network.get(&START.to_string()).unwrap());
+        (&START.to_string(), network.get(START).unwrap());
 
     let steps = solve(path_str, path, &network, start_node, END);
     Some(steps)
